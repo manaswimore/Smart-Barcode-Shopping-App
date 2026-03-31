@@ -1,0 +1,425 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: #f4f6fb;
+  color: #1f2937;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+button.secondary {
+  background: #6b7280;
+}
+
+/* ===== CARD ===== */
+.card {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* ===== TEXT ===== */
+p {
+  font-size: 14px;
+  color: #4b5563;
+  text-align: center;
+  margin-top: 10px;
+}
+/* ===== SCAN PAGE CONTAINER ===== */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #f5f7fa;
+}
+
+/* ===== TITLE ===== */
+.container h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #1f2937;
+  text-align: center;
+}
+
+/* ===== BACK BUTTON ===== */
+button.secondary {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  background: #6b7280;
+}
+
+/* ===== SCAN PAGE CONTAINER ===== */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #f5f7fa;
+}
+
+/* ===== TITLE ===== */
+.container h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #1f2937;
+  text-align: center;
+}
+
+/* ===== BACK BUTTON ===== */
+button.secondary {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  background: #6b7280;
+}
+
+/* ===== SCANNER HERO BOX ===== */
+.scanner-box {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  margin: 20px 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: black;
+  border: 2px solid #2563eb;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== CAMERA VIDEO FIT ===== */
+#reader {
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+#reader video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 16px;
+}
+
+/* ===== REMOVE DARK OVERLAY ===== */
+#reader__scan_region {
+  background: transparent !important;
+}
+
+#reader__scan_region video {
+  filter: none !important;
+}
+
+/* ===== STOP BUTTON ===== */
+button.danger {
+  margin-top: 12px;
+  background: #dc2626;
+  width: 100%;
+  max-width: 260px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+@media (max-width: 480px) {
+  .scanner-box {
+    max-width: 260px;
+    height: 260px;
+  }
+
+  .container h2 {
+    font-size: 18px;
+  }
+}
+/* ===== CART PAGE ===== */
+.cart-page {
+  justify-content: flex-start;
+  padding-top: 30px;
+}
+
+/* Empty cart text */
+.empty-text {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 20px;
+}
+
+/* ===== CART ITEM CARD ===== */
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+}
+
+/* Product name */
+.item-name {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Price */
+.item-price {
+  font-size: 14px;
+  color: #374151;
+}
+
+/* ===== QTY CONTROLS ===== */
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.qty-controls button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 18px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.qty-controls span {
+  font-size: 16px;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* ===== REMOVE BUTTON ===== */
+.remove-btn {
+  background: #ef4444;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.remove-btn:hover {
+  background: #dc2626;
+}
+
+/* ===== TOTAL ===== */
+.total {
+  margin-top: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ===== GENERATE QR BUTTON ===== */
+.generate-btn {
+  margin-top: 14px;
+  width: 100%;
+  max-width: 260px;
+  font-size: 16px;
+  padding: 14px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  box-shadow: 0 8px 20px rgba(37,99,235,0.35);
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .cart-item {
+    padding: 14px;
+  }
+}
+/* ===== QR PAGE ===== */
+.qr-page {
+  justify-content: flex-start;
+  padding-top: 30px;
+}
+
+/* Subtitle */
+.qr-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* QR Card */
+.qr-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  margin: 20px 0;
+}
+
+.qr-card img {
+  width: 220px;
+  height: 220px;
+}
+
+/* Footer note */
+.qr-note {
+  font-size: 14px;
+  color: #4b5563;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .qr-card img {
+    width: 200px;
+    height: 200px;
+  }
+}
+/* ===== ADMIN SCAN PAGE ===== */
+
+/* Page layout */
+.admin-page,
+body > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Heading */
+h2 {
+  margin: 12px 0;
+  text-align: center;
+  color: #1f2937;
+}
+
+/* Back button */
+button {
+  align-self: flex-start;
+  margin-bottom: 12px;
+}
+
+/* Scanner container */
+#admin-reader {
+  width: 100%;
+  height: 100%;
+}
+
+/* Scanner outer box */
+div[style*="300px"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  margin: 16px 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Camera video fit */
+#admin-reader video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 8px;
+}
+
+/* Bill details card */
+div[style*="marginTop"] {
+  width: 100%;
+  max-width: 360px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  margin-top: 20px;
+}
+
+/* Bill rows */
+div[style*="marginTop"] div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Total & status */
+h4 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Confirm button */
+button:last-child {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #16a34a;
+  color: white;
+  font-size: 15px;
+}
+
+button:last-child:hover {
+  background: #15803d;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  div[style*="300px"] {
+    width: 260px !important;
+    height: 260px !important;
+  }
+}
